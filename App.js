@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import Profile from './components/Profile';
+import ImageBackdrop from './components/ImageBackdrop';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -22,7 +23,8 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Profile />
+        <ImageBackdrop />
+        {/* <Profile /> */}
       </View>
     );
   }
